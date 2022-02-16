@@ -1,0 +1,159 @@
+
+body {
+  background-image: url("cover.jpeg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
+.todo-application {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 400px;
+  background: #141827;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+  min-height: 200px;
+  min-width: 100px;
+
+}
+
+.add-todo-btn{
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: rgb(185, 176, 176);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.add-todo-area{
+  padding: 30;
+  margin: "auto";
+}
+.todo-text-area {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(185, 176, 176);;
+  width: 320px;
+  color: rgb(12, 10, 10);
+}
+
+.todo-input::placeholder {
+  color: black;
+}
+
+.todo-title{
+  text-align: center;
+  color: rgb(230, 221, 173);
+  font-size: 70px;
+}
+
+.todo-list {
+  border-radius: 4px;
+  max-width: 400px;
+  background-color: white;
+}
+.todo {
+  align-items: center;
+  background: rgb(245, 245, 245);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 0px;
+  position: relative;
+}
+
+.todo:hover {
+  background-color: rgb(241, 202, 165);
+}
+.todo:focus {
+  background-color: rgb(241, 202, 165);
+}
+
+.complete-btn{
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  background: rgb(140, 194, 140);
+  color: #fff;
+  margin-left: auto;
+}
+
+.complete-btn:hover {
+  background-color: rgb(59, 167, 26);
+}
+
+.remove-btn{
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  color: rgb(17, 14, 14);
+  background-color: transparent;
+}
+
+.remove-btn:hover {
+  background-color: rgb(163, 161, 161);
+}
+
+.page-btns{
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  border:none;
+  padding: 12px 20px;
+  font-size: 20px;
+}
+
+.previous:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.next {
+  background-color: #5db45d;
+  color: white;
+  border:none;
+  align-items: right;
+  padding: 12px 20px;
+  font-size: 20px;
+}
+
+.next:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.todo li {
+  list-style: none;
+
+}
+  .check {
+    margin-left: 10px;
+    transform: scale(1.5);
+  }
